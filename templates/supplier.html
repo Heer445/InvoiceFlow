@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Supplier Information</title>
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar">
+
+<div class="logo">
+InvoiceFlow
+</div>
+
+</nav>
+
+
+
+
+<div class="page">
+
+
+
+<!-- Steps -->
+
+<div class="steps">
+
+<div class="active">
+Supplier
+</div>
+
+<div>
+Client
+</div>
+
+<div>
+Config
+</div>
+
+<div>
+Items
+</div>
+
+<div>
+Preview
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-card">
+
+
+<h2>
+Supplier Information
+</h2>
+
+
+
+
+<form method="POST">
+
+
+
+<div class="grid">
+
+
+
+<div>
+
+<label>
+Business Name *
+</label>
+
+<input 
+type="text"
+name="name"
+required
+placeholder="Enter business name">
+
+</div>
+
+
+
+
+
+
+<div>
+
+<label>
+Email *
+</label>
+
+<input
+
+type="email"
+
+name="email"
+
+required
+
+placeholder="example@gmail.com">
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+<label>
+Phone Number *
+</label>
+
+
+<input
+
+type="tel"
+
+name="phone"
+
+pattern="[0-9]{10}"
+
+required
+
+placeholder="10 digit mobile number">
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+<label>
+State *
+</label>
+
+
+<input
+
+type="text"
+
+name="state"
+
+required
+
+placeholder="Enter state">
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+<label>
+Pin Code *
+</label>
+
+
+<input
+
+type="text"
+
+name="pin"
+
+pattern="[0-9]{6}"
+
+required
+
+placeholder="6 digit pin code">
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<label>
+Address *
+</label>
+
+
+<textarea
+
+name="address"
+
+required
+
+placeholder="Enter supplier address">
+
+</textarea>
+
+
+
+
+
+
+
+
+<!-- Default Supplier Preference -->
+
+<div class="default-box">
+
+
+<h3>
+Default Supplier Preference
+</h3>
+
+
+<p>
+Save this information for future invoices?
+</p>
+
+
+
+<label class="simple-option">
+
+<input 
+type="radio"
+name="default"
+checked>
+
+
+Yes, save as default
+
+
+</label>
+
+
+
+
+<label class="simple-option">
+
+
+<input 
+type="radio"
+name="default">
+
+
+No, only this invoice
+
+
+</label>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<button class="next">
+
+Continue to Client
+
+</button>
+
+
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+
+</html>
